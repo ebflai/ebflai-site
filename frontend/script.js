@@ -1,4 +1,3 @@
-
 const body = document.body;
 const sendBtn = document.querySelector(".send-btn");
 const input = document.querySelector(".input-box input");
@@ -19,7 +18,7 @@ function sendMessage() {
   appendMessage("user", message);
   input.value = "";
 
-  fetch("http://127.0.0.1:8000/chat", {
+  fetch("https://working-mindy-minteyleafy-c9b59c9a.koyeb.app/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -37,22 +36,6 @@ function sendMessage() {
     .catch(() => {
       appendMessage("bot", "Sunucuya ulaşılamadı.");
     });
-}
-
-function appendMessage(sender, text) {
-  const div = document.createElement("div");
-  div.classList.add("chat-message", sender);
-
-  const strong = document.createElement("strong");
-  strong.textContent = sender === "user" ? "Sen" : "EBFL AI";
-
-  const p = document.createElement("p");
-  p.textContent = text;
-
-  div.appendChild(strong);
-  div.appendChild(p);
-  chatBox.appendChild(div);
-  chatBox.scrollTop = chatBox.scrollHeight;
 }
 
 function saveChatHistory() {

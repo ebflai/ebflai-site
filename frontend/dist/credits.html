@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emeği Geçenler</title>
+  <script defer src="script.js"></script>
+  <style>
+    .section-heading {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #a64ca6, #f78a1f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-stroke: 0.6px black;
+    }
+
+    .credits-list {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px;
+      list-style: none;
+      text-align: center;
+    }
+
+    .credits-list li {
+  font-size: 1.2rem;
+  margin: 16px 0;
+  color: var(--text-color);
+  cursor: default;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.credits-list li:hover {
+  background: linear-gradient(270deg, #a64ca6, #f78a1f, #a64ca6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 1s linear infinite;
+}
+
+
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .role {
+      display: block;
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    .contact-section a {
+      color: #f78a1f;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .contact-section a:hover {
+      color: #ffb347;
+      text-shadow: 0 0 5px #f78a1f;
+    }
+  </style>
+  <link rel="stylesheet" crossorigin href="/ebflai-site/assets/style-BvH7d4cg.css">
+</head>
+<body class="dark">
+  <header class="top-bar">
+    <a href="index.html" class="logo">ebfl ai</a>
+    <div class="header-right">
+      <a href="credits.html" class="credits-link">Emeği Geçenler</a>
+      <a href="https://ebfl.meb.k12.tr/" class="credits-link" target="_blank" rel="noopener">EBFL Resmi Sitesi</a>
+    </div>    
+  </header>
+
+  <nav class="nav-bar">
+    <a href="chat.html" class="nav-btn">EBFL AI ile Konuş</a>
+    <a href="lgs.html" class="nav-btn">LGS Puan Hesaplama</a>
+    <a href="yks.html" class="nav-btn">YKS Puan Hesaplama</a>
+  </nav>
+
+  <main class="chat-container">
+    <h2 class="section-heading">Emeği Geçenler</h2>
+    <ul class="credits-list">
+      <li>
+        Ahmet Yılmaz
+        <span class="role">Yazılım, Tasarım, Planlama</span>
+      </li>
+      <li>
+        Elif Demir
+        <span class="role">Yazılım, Planlama</span>
+      </li>
+      <li>
+        Mehmet Kaya
+        <span class="role">Belge Yazımı</span>
+      </li>
+    </ul>
+
+    <div class="contact-section">
+      <p>Bize <a href="mailto:ebflai1@gmail.com">ebflai1@gmail.com</a> adresinden ulaşabilirsiniz.</p>
+    </div>
+  </main>
+</body>
+</html>
